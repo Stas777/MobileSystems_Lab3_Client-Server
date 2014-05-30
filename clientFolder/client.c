@@ -2,10 +2,12 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <stdlib.h>
 
 const int readSize = 1024;
 
-int main() {
+int main() 
+{
     int sock, r, port;
     long fileSize, sizeCheck = 0;
     struct sockaddr_in addr;
